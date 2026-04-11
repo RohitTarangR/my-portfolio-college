@@ -1,0 +1,367 @@
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      margin: 15px auto;
+      width: fit-content;
+      padding: 8px 20px;
+    }
+
+    .navbar .nav-link {
+      color: #aaa;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar .nav-link.active {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .skill-box {
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .skill-box:hover {
+      background: #111;
+      transform: translateY(-5px);
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+
+    #contact {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #contact h2 {
+      font-size: 3rem;
+    }
+
+    #contact p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 992px) {
+      .navbar {
+        width: 90%;
+        border-radius: 20px;
+      }
+
+      .hero {
+        padding: 100px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .skill-box {
+        padding: 15px;
+      }
+
+      .card {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      .navbar {
+        align-items: center;
+        padding: 10px;
+      }
+
+      .navbar .nav-link {
+        margin: 5px 0;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      #about p {
+        font-size: 0.95rem;
+      }
+
+      #contact h2 {
+        font-size: 2rem;
+      }
+
+      #contact p {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 120px 0 40px;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 0.9rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      #contact h2 {
+        font-size: 1.7rem;
+      }
+
+      #contact p {
+        font-size: 1rem;
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      margin: 15px auto;
+      width: fit-content;
+      padding: 8px 20px;
+    }
+
+    .navbar .nav-link {
+      color: #aaa;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar .nav-link.active {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .skill-box {
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .skill-box:hover {
+      background: #111;
+      transform: translateY(-5px);
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+
+    #contact {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #contact h2 {
+      font-size: 3rem;
+    }
+
+    #contact p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 992px) {
+      .navbar {
+        width: 90%;
+        border-radius: 20px;
+      }
+
+      .hero {
+        padding: 100px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .skill-box {
+        padding: 15px;
+      }
+
+      .card {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      .navbar {
+        align-items: center;
+        padding: 10px;
+      }
+
+      .navbar .nav-link {
+        margin: 5px 0;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      #about p {
+        font-size: 0.95rem;
+      }
+
+      #contact h2 {
+        font-size: 2rem;
+      }
+
+      #contact p {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 120px 0 40px;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 0.9rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      #contact h2 {
+        font-size: 1.7rem;
+      }
+
+      #contact p {
+        font-size: 1rem;
+      }
+    }
