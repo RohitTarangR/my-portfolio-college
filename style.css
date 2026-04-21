@@ -1,16 +1,21 @@
 /* ================= VARIABLES ================= */
 :root {
-  --primary-color: #0d6efd; /* Bootstrap primary blue */
-  --bg-color: #050505;
-  --card-bg: #121212;
-  --text-color: #ffffff;
-  --secondary-text: #aaaaaa;
+  --primary-color: #6366f1; /* Vibrant Indigo */
+  --secondary-color: #ec4899; /* Bright Pink */
+  --accent-color: #06b6d4; /* Vivid Cyan */
+  --bg-color: #f8fafc; /* Not used directly but kept for backup */
+  --card-bg: rgba(255, 255, 255, 0.65); /* Light frosted glass */
+  --text-color: #1e293b; /* Dark slate */
+  --secondary-text: #475569; /* Slate */
+  --card-border: rgba(255, 255, 255, 1); /* White crisp edge */
+  --card-hover-border: #6366f1; /* Indigo hover */
 }
 
 /* ================= ENHANCED BASE ================= */
 body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--bg-color);
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-attachment: fixed;
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -32,10 +37,10 @@ body {
 
 /* ================= MODERN NAVBAR ================= */
 .navbar {
-  background: rgba(20, 20, 20, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid var(--card-border);
   border-radius: 50px;
   margin: 20px auto;
   width: fit-content;
@@ -71,11 +76,11 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .navbar .nav-link.active {
-  color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -91,9 +96,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40vw;
-  height: 40vw;
-  background: radial-gradient(circle, rgba(13,110,253,0.15) 0%, rgba(0,0,0,0) 70%);
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
   z-index: -1;
   pointer-events: none;
 }
@@ -101,7 +106,7 @@ body {
 .hero-title {
   font-size: 4.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #ffffff 0%, #aaaaaa 100%);
+  background: linear-gradient(135deg, #1e293b 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
@@ -152,7 +157,7 @@ body {
 .about-text {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #ddd;
+  color: var(--secondary-text);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -160,7 +165,9 @@ body {
 /* ================= SKILLS ================= */
 .skill-box {
   background: var(--card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
   padding: 30px 20px;
   border-radius: 20px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -185,7 +192,7 @@ body {
 
 .skill-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 .skill-box:hover::before {
@@ -207,16 +214,18 @@ body {
 /* ================= CARDS (Experience & Projects) ================= */
 .card {
   background: var(--card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
-  color: #fff;
+  color: var(--text-color);
   transition: all 0.3s ease;
 }
 
 .project-card:hover, .experience-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
 }
 
 .project-link {
@@ -232,7 +241,7 @@ body {
 }
 
 .experience-list {
-  color: #ddd;
+  color: var(--secondary-text);
   padding-left: 20px;
   line-height: 1.7;
 }
@@ -240,9 +249,11 @@ body {
 /* ================= CONTACT ================= */
 .contact-box {
   background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--card-border);
   max-width: 500px;
 }
 
@@ -266,7 +277,7 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: var(--secondary-text);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(0,0,0,0.05);
   margin-top: 50px;
 }
 
